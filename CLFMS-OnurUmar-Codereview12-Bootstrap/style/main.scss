@@ -1,0 +1,84 @@
+$primary-color: dimgray;
+
+* {
+  color: $primary-color;
+}
+
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  color: $primary-color;
+}
+
+.fa:hover {
+  opacity: 0.7;
+}
+
+$bootstrap-sm: 576px;
+$bootstrap-md: 768px;
+$bootstrap-lg: 992px;
+$bootstrap-xl: 1200px;
+
+.card {
+  border: none;
+
+  img {
+    background-color: whitesmoke;
+    height: 55vw;
+    object-fit: cover;
+
+
+    @media (min-width: $bootstrap-sm) {
+      height: 40vw;
+    }
+
+    @media (min-width: $bootstrap-md) {
+      height: 30vw;
+    }
+
+    @media (min-width: $bootstrap-lg) {
+      height: 22.5vw;
+    }
+
+    @media(min-width: 1600px) {
+      height: 16vw;
+    }
+  }
+
+  img[alt] {
+    color: dimgray;
+  }
+
+  .card-footer {
+    background-color: unset;
+    border: none;
+    margin-top: 0;
+  }
+  img:hover,
+  a:hover {
+    cursor: pointer;
+    opacity: 0.7;
+  }
+}
+
+.widget-placeholder {
+  background-color: lightgray;
+}
+
+.blogpost {
+
+  img {
+    width: 100%;
+  }
+
+  .blog-header-img {
+    height: 30vw;
+    object-fit: cover;
+    object-position: center;
+    overflow: hidden;
+  }
+
+}
